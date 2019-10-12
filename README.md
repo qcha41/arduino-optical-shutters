@@ -13,4 +13,6 @@ Elements:
 ![alt text](https://www.parallax.com/sites/default/files/styles/mid-sized-product/public/900-00005.png)
 - Wires
 
+Scheme:
 
+![alt text](scheme.png)
