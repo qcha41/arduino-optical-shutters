@@ -4,7 +4,7 @@ This is an Arduino project dedicated to automate three home made optical shutter
 
 ![](shutters.gif)
 
-This repository contains both the arduino microprogram, and the python driver.
+This repository contains both the microprogram to flash on the Arduino, and the python driver based on the Python library pyvisa.
 
 Elements:
 - 1x [Arduino Uno Rev 3](https://store.arduino.cc/arduino-uno-rev3) 
@@ -16,3 +16,16 @@ Elements:
 Scheme:
 
 ![alt text](scheme.png)
+
+
+Python driver:
+You first need to set in the driver the attribute `POS` that contains the reference angles of each servo for their ON and OFF states. Test different angles with the functions `setAngleShutter<NUM>`.
+
+Once this is done, you can use the functions `setShutter<NUM>` to enable or disable a shutter.
+
+``` python
+arduino = Driver('ASRL::2::INSTR')
+arduino.setShutter1(True)     # Enable shutter 1
+arduino.setShutter3(False)    # Disable shutter 3
+arduino.setConfig('1x0')      # Enable shutter 1, don't move shutter 2, disable shutter 3
+```
