@@ -8,9 +8,9 @@ This repository contains both the arduino microprogramm, and the python driver.
 
 Elements:
 - 1x [Arduino Uno Rev 3](https://store.arduino.cc/arduino-uno-rev3) 
-![alt text](images/arduino.jpg "Logo Title Text 1")
+![alt text](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000066_iso_3.jpg)
 - 3x [Parallax Standard Servo](https://www.parallax.com/product/900-00005)
-![alt text](images/shutters.png "Logo Title Text 1")
+![alt text](https://www.parallax.com/sites/default/files/styles/mid-sized-product/public/900-00005.png)
 - Wires
 
 
