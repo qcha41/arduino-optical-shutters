@@ -4,7 +4,7 @@ This is an Arduino project dedicated to automate three home made optical shutter
 
 ![](shutters.gif)
 
-This repository contains both the arduino microprogramm, and the python driver.
+This repository contains both the arduino microprogram, and the python driver.
 
 Elements:
 - 1x [Arduino Uno Rev 3](https://store.arduino.cc/arduino-uno-rev3) 
