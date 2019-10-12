@@ -6,19 +6,20 @@ This is an Arduino project dedicated to automate three home made optical shutter
 
 This repository contains both the microprogram to flash on the Arduino, and the python driver based on the Python library pyvisa.
 
-Elements:
+## Elements:
 - 1x [Arduino Uno Rev 3](https://store.arduino.cc/arduino-uno-rev3) 
 ![alt text](https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000066_iso_3.jpg)
 - 3x [Parallax Standard Servo](https://www.parallax.com/product/900-00005)
 ![alt text](https://www.parallax.com/sites/default/files/styles/mid-sized-product/public/900-00005.png)
 - Wires
 
-Scheme:
+## Wiring diagram:
 
 ![alt text](scheme.png)
 
 
-Python driver:
+## Python driver:
+
 You first need to set in the driver the attribute `POS` that contains the reference angles of each servo for their ON and OFF states. Test different angles with the functions `setAngleShutter<NUM>`.
 
 Once this is done, you can use the functions `setShutter<NUM>` to enable or disable a shutter.
