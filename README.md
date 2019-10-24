@@ -17,7 +17,7 @@ This repository contains both the microprogram to flash on the Arduino, and the 
 
 ![alt text](scheme.png)
 
-![alt text](photo.jpg)
+![alt text](photo.jpg = 250x)
 
 
 ## Python driver:
