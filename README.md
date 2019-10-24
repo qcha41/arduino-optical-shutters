@@ -2,7 +2,7 @@
 
 This is an Arduino project dedicated to automate three home made optical shutters (light caches mounted on a DC motor) used in free space optical experiments. The Arduino board is controlled by a python driver script running on a computer, through a serial (USB) connection.
 
-![](shutters.gif)
+<p align="center"><img src="shutters.gif"/></p>
 
 This repository contains both the microprogram to flash on the Arduino, and the python driver based on the Python library pyvisa.
 
@@ -17,14 +17,11 @@ This repository contains both the microprogram to flash on the Arduino, and the 
 
 ![alt text](scheme.png)
 
-![alt text](photo.jpg = 250x)
+<p align="center"><img src="photo.jpg" alt="Kitten"	title="A cute kitten" width="600"/></p>
+  
 
 
 ## Python driver:
-
-You first need to set in the driver the attribute `POS` that contains the reference angles of each servo for their ON and OFF states. Test different angles with the functions `setAngleShutter<NUM>`.
-
-Once this is done, you can use the functions `setShutter<NUM>` to enable or disable a shutter.
 
 ``` python
 arduino = Driver('ASRL::2::INSTR')
@@ -34,3 +31,5 @@ arduino.shutter3.invert()               # Invert state of shutter 3
 arduino.set_global_config('1x0')        # Enable shutter 1, don't move shutter 2, disable shutter 3
 arduino.safe_state()                    # Enable every shutters
 ```
+
+You can customize the angles of the ON and OFF states directly in the __init__ function of the Driver class. Use the function ``set_angle``of each shutter to find these particular angles.
