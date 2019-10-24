@@ -17,6 +17,8 @@ This repository contains both the microprogram to flash on the Arduino, and the 
 
 ![alt text](scheme.png)
 
+![alt text](photo.jpg)
+
 
 ## Python driver:
 
@@ -26,7 +28,9 @@ Once this is done, you can use the functions `setShutter<NUM>` to enable or disa
 
 ``` python
 arduino = Driver('ASRL::2::INSTR')
-arduino.setShutter1(True)     # Enable shutter 1
-arduino.setShutter3(False)    # Disable shutter 3
-arduino.setConfig('1x0')      # Enable shutter 1, don't move shutter 2, disable shutter 3
+arduino.shutter1.set_state(True)        # Enable shutter 1
+arduino.shutter2.set_state(False)       # Disable shutter 2
+arduino.shutter3.invert()               # Invert state of shutter 3
+arduino.set_global_config('1x0')        # Enable shutter 1, don't move shutter 2, disable shutter 3
+arduino.safe_state()                    # Enable every shutters
 ```
