@@ -17,7 +17,7 @@ This repository contains both the microprogram to flash on the Arduino, and the 
 
 ![alt text](scheme.png)
 
-<p align="center"><img src="photo.jpg" alt="Kitten"	title="A cute kitten" width="600"/></p>
+<p align="center"><img src="photo.jpg" width="600"/></p>
   
 
 
